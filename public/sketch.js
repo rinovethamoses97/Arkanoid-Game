@@ -17,9 +17,9 @@ function preload(){
     backgroundImage=loadImage("./background.jpg");
 }
 function setup(){
-    createCanvas(501,500);
+    createCanvas(500,500);
     rows=height/brickHeight;
-    cols=width-1/brickWidth;
+    cols=width/brickWidth;
     paddle=new Paddle();
     ball=new Ball();
     ball.applyForce(createVector(3,-3))
