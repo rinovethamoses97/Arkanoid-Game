@@ -18,10 +18,10 @@ class Ball{
     }
     increaseSpeed(){
         if(this.velocity.y>0 && this.velocity.y<9){
-            this.velocity.y+=0.001
+            this.velocity.y+=0.003;
         }
         else if(this.velocity<0 && this.velocity.y>-9){
-            this.velocity.y-=0.001;
+            this.velocity.y-=0.003;
         }
     }
     applyForce(force){
