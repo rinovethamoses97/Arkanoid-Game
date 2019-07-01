@@ -11,7 +11,7 @@ var paddleImage;
 var ballImage;
 var backgroundImage;
 function preload(){
-    hitSound=loadSound("./hitsound.mp3");
+    hitSound=loadSound("./hitSound.mp3");
     paddleImage=loadImage("./paddleImage.png");
     ballImage=loadImage("./ballImage.png");
     backgroundImage=loadImage("./background.jpg");
