@@ -67,7 +67,7 @@ function draw(){
         alert("Won!!");
         noLoop();
     }
-    if(window.innerWidth<400){
+    if(window.innerWidth<1000){
         paddle.pos.x=mouseX;
     }
 }
