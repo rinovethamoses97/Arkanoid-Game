@@ -17,7 +17,10 @@ function preload(){
     backgroundImage=loadImage("./background.jpg");
 }
 function setup(){
-    createCanvas(500,500);
+    if(screen.width<380)
+        createCanvas(screen.width,500);
+    else
+        createCanvas(500,500);
     rows=height/brickHeight;
     cols=width/brickWidth;
     paddle=new Paddle();
@@ -67,7 +70,7 @@ function draw(){
         alert("Won!!");
         noLoop();
     }
-    if(window.innerWidth<1000){
+    if(screen.width<380){
         paddle.pos.x=mouseX;
     }
 }
