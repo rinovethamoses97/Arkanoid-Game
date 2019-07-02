@@ -67,6 +67,9 @@ function draw(){
         alert("Won!!");
         noLoop();
     }
+    if(window.innerWidth<400){
+        paddle.pos.x=mouseX;
+    }
 }
 function keyPressed(){
     if(keyCode==32){
